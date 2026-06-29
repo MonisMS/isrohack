@@ -1,0 +1,5 @@
+earthengine-api>=0.1.380
+geemap
+numpy
+shapely        # gen_overlays: dissolve hotspot cells + IGP region
+pillow         # gen_wind_textures: bake U/V wind PNGs
