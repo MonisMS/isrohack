@@ -1,0 +1,22 @@
+# python
+backend/.venv/
+**/__pycache__/
+*.pyc
+data-pipeline/.venv/
+
+# node
+frontend/node_modules/
+frontend/dist/
+
+# playwright (verification only)
+frontend/shot*.mjs
+
+# generated data
+backend/exports/
+data-pipeline/exports/
+
+# local tooling
+.claude/settings.local.json
+
+# os
+.DS_Store
