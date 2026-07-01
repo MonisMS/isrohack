@@ -63,8 +63,8 @@ and shared, so they are **not** overwritten by the swap.
 | 1 Acquire & pre-process HCHO | `hcho_grid.json` (TROPOMI) |
 | 2 Extract burning periods (fires) | `fires.json` (FIRMS) + time-series |
 | 3 Map spatio-temporal HCHO | map + time slider |
-| 4 Identify hotspots (statistical) | z-score > mean+1.5σ → `hotspots.json` |
-| 5 Fire ↔ HCHO correlation | scatter + Pearson R = 0.93 |
+| 4 Identify hotspots (statistical) | Getis-Ord Gi* (95% confidence) → `hotspots.json` |
+| 5 Fire ↔ HCHO correlation | scatter + Pearson R ≈ 0.94 |
 | 6 Transport via wind | ERA5 wind arrows (NW→SE) |
 
 See [ROADMAP.md](ROADMAP.md) for the full plan, team split, and demo narrative.
